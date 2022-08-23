@@ -1,13 +1,13 @@
 // map filter ,reduce => output base question
 
 question:-1   /*Return only Name of Student in capital latter*/ 
-let Students = [
-    {Name:"Rajesh",RollNumber:28 , Marks:50},
-    {Name:"Virendra",RollNumber:37 , Marks:85},
-   { Name:"Riyaj",RollNumber:18 , Marks:82},
-    {Name:"Abhishek",RollNumber:15 , Marks:75},
+// let Students = [
+//     {Name:"Rajesh",RollNumber:28 , Marks:50},
+//     {Name:"Virendra",RollNumber:37 , Marks:85},
+//    { Name:"Riyaj",RollNumber:18 , Marks:82},
+//     {Name:"Abhishek",RollNumber:15 , Marks:75},
 
-]
+// ]
 solution:-1
 // let NameOfStudent = Students.map((student)=>{
 //     return student.Name.toUpperCase()
@@ -37,6 +37,14 @@ question:-3 /*marks more than 60 and RollNumber should be greater than 15 */
 
 
 question:-4 /*sum of Marks of all student  */
+let Students = [
+    {Name:"Rajesh",RollNumber:28 , Marks:50},
+    {Name:"Virendra",RollNumber:37 , Marks:85},
+   { Name:"Riyaj",RollNumber:18 , Marks:82},
+    {Name:"Abhishek",RollNumber:15 , Marks:75},
+
+]
+
 // let studentMarksSum = Students.reduce((acc,curr)=>{  
 //     return acc+curr.Marks;    
 // })
@@ -63,6 +71,6 @@ const totalMarks = Students.map((stu)=>{
     return acc+curr.Marks
 
 })
-console.log(totalMarks)
+console.log(totalMarks) //224
 
 
