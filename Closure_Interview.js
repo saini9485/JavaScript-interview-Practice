@@ -153,7 +153,7 @@ example:-8
 // console.log(outer());//1,2
 
 
-// example:- 9
+ example:- 9
 
 // function outer() {
 //   let counter = 0;

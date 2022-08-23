@@ -27,7 +27,7 @@ question: -3;
 
 //a->b->pro->set 
 
-question:- 4
+question:- 4 
 //infinite currying 
 // function add (a) {
 
