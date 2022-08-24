@@ -9,8 +9,9 @@
 //in case of normal function it loss our memory
 //why we use closure 
 // for save the time and made easy of code for replace the setTimeout 
-example:-1
 
+
+example:-1
 // d = 5
 // function outerFunction (a){
 // let b = 10;
@@ -45,8 +46,9 @@ example:-1
 //     innerFunction ()
 // }
 // outerFunction (5)
-example:-2
 
+
+example:-2
 // 2 . Lost in parameters
 // (function immediateA(a) {
 //     return (function immediateB(b) {   //this is called closure 
@@ -55,7 +57,7 @@ example:-2
 //   })(0); //0
 
 
- // example :- 3
+  example :- 3
   // 3. who's who
 
 //   let count = 0;
@@ -76,16 +78,16 @@ example: - 4
 //   }, 1000);
 // }//3 3 3
 
-example: - 5
 
+example: - 5
 // for (let i = 0; i < 3; i++) {
 //   setTimeout(function log() {
 //     console.log(i); // What is logged?
 //   }, 1000);
 // } //3 3 3
 
-example:-6
 
+example:-6
 //Right or wrong message
 
 // function createIncrement() {
@@ -106,8 +108,8 @@ example:-6
 // increment(); 
 // log(); // What is logged? // 0
 
-example:-7
 
+example:-7
 // function outer() {
 //   let counter = 0;
 
@@ -136,11 +138,10 @@ example:-7
 // let myFunc = outer();
 // console.log(myFunc()); // 1 
 
-example:-8
-// // 
+
+example:-8 
 // function outer() {
 //   let counter = 0;
-
 //   function incrementCounter() {
 //     // we have access to counter here even though it's defined in the parent scope
 //     counter += 1;
@@ -154,7 +155,6 @@ example:-8
 
 
  example:- 9
-
 // function outer() {
 //   let counter = 0;
 
@@ -174,16 +174,16 @@ example:-8
 // console.log(other());
 // console.log(other());
 
-example:-10
 
+example:-10
 // for (var i = 0; i < 3; i++) {
 //   setTimeout(function() { 
 //     console.log (i);
 //    }, 1000 +i);
 // }//
 
-example:-11
 
+example:-11
 // Outer function
 function adder(a) {
   // Inner function/Closure
@@ -200,8 +200,8 @@ var add10 = adder(10);
 add5(10); //15 
 add10(10); //20
 
-example:-12
 
+example:-12
 var minus = (function () {
   var counter = 999;
   return function () {
@@ -210,8 +210,8 @@ var minus = (function () {
   
   };
  
-})();
+})(); 
 
-minus();
-minus();
+minus();//998
+minus();//997
 minus();//96

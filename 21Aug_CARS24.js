@@ -1,5 +1,7 @@
 //three round interview
 //1. javascript 2 . react.js 3 . HR
+
+
 question: -1;
 //Based on Hosting
 // function abc() {
@@ -8,8 +10,8 @@ question: -1;
 // }
 // abc(); //undefine
 
-question: -2;
 
+question: -2;
 // function abc() {
 //   console.log(a, b, c);
 //   let b = 15; //error
@@ -17,6 +19,7 @@ question: -2;
 //   var a = 10; //undefine
 // }
 // abc();
+
 
 question: -3;
 //output base question
@@ -27,6 +30,7 @@ question: -3;
 
 //a->b->pro->set 
 
+
 question:- 4 
 //infinite currying 
 // function add (a) {
@@ -34,7 +38,7 @@ question:- 4
 // }
 // console.log(add(5)(2)(4)(6)()) 
 
-//answer :-
+answer :-4
 // function add (a){
 //     return function (b){
 //         if(b)return add (a+b)
@@ -47,12 +51,9 @@ question:- 4
 
 question:-5
 //implement this code 
-
 // const result = calc.add(10).multiply(5).subtract(30).add(10);
 // console.log(result.total)
-
-//solution 
-
+solution :-5
 const calc = {
     total:0,
     add(a){
