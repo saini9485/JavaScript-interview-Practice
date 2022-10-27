@@ -93,11 +93,13 @@ question:-8    /*we wanted to print 1 to 5 in  a interval of 1 second  */
   
   
   question:-9
-  let count = 0;
-  (function immediate() {
-    if (count === 0) {
-      let count = 1;
-      console.log(count); // What is logged?
-    }
-    console.log(count); // What is logged?
-  })(); //1,0
+  // let count = 0;
+  // (function immediate() {
+  //   if (count === 0) {
+  //     let count = 1;
+  //     console.log(count); // What is logged?
+  //   }
+  //   console.log(count); // What is logged?
+  // })(); //1,0
+
+  
