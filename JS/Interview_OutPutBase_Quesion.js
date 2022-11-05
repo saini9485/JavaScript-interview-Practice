@@ -102,4 +102,5 @@ question:-8    /*we wanted to print 1 to 5 in  a interval of 1 second  */
   //   console.log(count); // What is logged?
   // })(); //1,0
 
+  question:-10 
   

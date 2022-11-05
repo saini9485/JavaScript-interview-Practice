@@ -19,16 +19,16 @@
 
 
 //With factory method
-function createPerson(name, age, place) {
-    return {
-        name: name,
-        age: age,
-        place: place,
-    }
-}
-const Riyaj  = createPerson("riyaj", 23, "Sultanpur")
-const Virendra  = createPerson("Virendra", 21, "Meerut")
-const Rajesh  = createPerson("Rajesh", 22, "Noida")
-console.log(Riyaj)
-console.log(Virendra)
-console.log(Rajesh)
+// function createPerson(name, age, place) {
+//     return {
+//         name: name,
+//         age: age,
+//         place: place,
+//     }
+// }
+// const Riyaj  = createPerson("riyaj", 23, "Sultanpur")
+// const Virendra  = createPerson("Virendra", 21, "Meerut")
+// const Rajesh  = createPerson("Rajesh", 22, "Noida")
+// console.log(Riyaj)
+// console.log(Virendra)
+// console.log(Rajesh)
