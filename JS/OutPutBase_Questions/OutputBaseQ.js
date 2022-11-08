@@ -59,7 +59,7 @@ delete X;
 return X;
 }
 )(0);
-console.log(output);
+console.log(Output);
 
 QUESTION:-5 //What will be the output of the following code?
 var X = { Foo : 1}; 

@@ -41,5 +41,5 @@ function Interval (){
     console.log((2),1000)
     console.log(1)
     console.log((3),20000)
-    console.log(4)
+    console.log(4) //1,4,2,3
 }
