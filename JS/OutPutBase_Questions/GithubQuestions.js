@@ -134,6 +134,186 @@ Question:-11 // What is the output of below code in non-strict mode ?
   parameter.
 Note: In strict mode, duplicate parameters will throw a Syntax Error. */
 
-Question:-12 //
+Question:-12 //  what will output ?
+// const printNumbersArrow = (first, second, first) => {
+//     console.log(first, second, first);
+//   };
+//   printNumbersArrow(1, 2, 3);
+//output 
+/* the arrow functions doesn't not allow duplicate parameters in either 
+strict or non-strict mode.*/
+
+Question:-13 // what will output ?
+// const arrowFunc = () => arguments.length;
+// console.log(arrowFunc(1, 2, 3));
+// doutbs
+
+Question:-14 // what will output ?
+// console.log(String.prototype.trimLeft.name === "trimLeft");
+// console.log(String.prototype.trimLeft.name === "trimStart");
+//output: false true
+
+Question:-15 //what will be output ?
+// console.log(Math.max());
+//output -Infinity
+/*-Infinity is the initial comparant because almost every other value is bigger. 
+So when no arguments are provided, -Infinity is going to be returned.
+ Note: Zero number of arguments is a valid case.*/
+
+ Question:-15.1 //what will be output ?
+// console.log(Math.min());
+//output Infinity
+
+Question:-16 //
+// console.log(10 == [10]);
+// console.log(10 == [[[[[[[10]]]]]]]);
+//True True 
+/*10 === Number([10].valueOf().toString()); // 10 */
+
+Question:-17 // What will the output 
+// console.log(10 + "10"); // 1010
+// console.log(10 - "10"); 0 
+
+Question:-18 // what will be output ?
+// console.log([0] == false); 
+// if ([0]) {
+//   console.log("I'm True");
+// } else {
+//   console.log("I'm False");
+//}
+//output: True I'm True
+/*In comparison operators, the expression [0] converted to Number([0].valueOf().toString()) 
+which is resolved to false. Whereas [0] just becomes a truthy value without any conversion 
+because there is no comparison operator. */
+
+Question:-19 // What will be output ?
+// console.log([1, 2] + [3, 4]);
+//output 1,23,4
+/*The + operator is defined for arrays. 
+So it converts arrays into strings and concatenates them. */
+ 
+Question:-20 //what will be the output ?
+// const numbers = new Set([1, 1, 2, 3, 4]);
+// console.log(numbers); 
+
+// const browser = new Set("Firefox");
+// console.log(browser);
+//output => { 1, 2, 3, 4 }  { 'F', 'i', 'r', 'e', 'f', 'o', 'x' }
+/*Since Set object is a collection of unique values, it won't allow duplicate values in the collection. At the same time, 
+it is case sensitive data structure. */
+
+Question:-21 //
+// console.log(NaN === NaN); //false
+/*NaNs are never equal for floating-point numbers. */
+
+Question:-22 //
+// let numbers = [1, 2, 3, 4, NaN];
+// console.log(numbers.indexOf(NaN));
+//output -1 
+/*The indexOf uses strict equality operator(===) internally and NaN === NaN evaluates to false. 
+Since indexOf won't be able to find NaN inside an array, it returns -1 always.  */
+
+Question:-23 //
+// let [a, ...b,] = [1, 2, 3, 4, 5];
+// console.log(a, b); //SyntaxError
+/*When using rest parameters, trailing commas are not allowed and will throw a SyntaxError. 
+If you remove the trailing comma then it displays 1, [2, 3, 4, 5] answer */
+
+Question:-24 //
+
+Question:-25 //
+// async function func() {
+//     return 10;
+//   }
+//   console.log(func());
+  //output: Promise {10} => Async functions always return a promise. 
+
+Question:-26 
+// async function func() {
+//     await 10;
+//   }
+//   console.log(func());
+//output:  Promise {<resolved>: undefined} => becouse we are not returning function
+
+Question:-27 //
+// function delay() {
+//     return new Promise(resolve => setTimeout(resolve, 2000));
+//   }
+  
+//   async function delayedLog(item) {
+//     await delay();
+//     console.log(item);
+//   }
+  
+//   async function processArray(array) {
+//     array.forEach(item => {
+//       await delayedLog(item);
+//     })
+//   }
+  
+//   processArray([1, 2, 3, 4]); //SyntaxError => await should be below of async function
+
+Question:-28 //
+// function delay() {
+//     return new Promise((resolve) => setTimeout(resolve, 2000));
+//   }
+  
+//   async function delayedLog(item) {
+//     await delay();
+//     console.log(item);
+//   }
+  
+//   async function process(array) {
+//     array.forEach(async (item) => {
+//       await delayedLog(item);
+//     });
+//     console.log("Process completed!");
+//   }
+//   process([1, 2, 3, 5]);
+  //output Process completed! 1 2 3 5
+  /*The forEach method will not wait until all items are finished but it just runs the tasks and 
+  goes next. Hence, the last statement is displayed first followed by a sequence of promise 
+  resolutions.*/ 
+
+Question:-28.1 //Using of loop 
+// async function processArray(array) {
+//     for (const item of array) {
+//       await delayedLog(item);
+//     }
+//     console.log("Process completed!");
+//   }
+
+  Question:-29 //
+//   var set = new Set();
+// set.add("+0").add("-0").add(NaN).add(undefined).add(NaN);
+// console.log(set);
+//output: Set(4) { '+0', '-0', NaN, undefined }
+/*Set has few exceptions from equality check,
+All NaN values are equal
+Both +0 and -0 considered as different values */
+
+Question:-30 //
+const sym1 = Symbol("one");
+const sym2 = Symbol("one");
+
+const sym3 = Symbol.for("two");
+const sym4 = Symbol.for("two");
+
+console.log(sym1 === sym2, sym3 === sym4);
+//false true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
