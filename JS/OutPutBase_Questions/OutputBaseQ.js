@@ -1,27 +1,24 @@
 QUESTION:-1   //What will be the output of the code below?
-x = 5;
-var x;
-(function fun() { 
-    {
-        let x = 1;
-        x++;
-        console.log(x);
-    }
-    console.log(x);
-})();
+// x = 5;
+// var x;
+// (function fun() { 
+//     {
+//         let x = 1;
+//         x++;
+//         console.log(x);
+//     }
+//     console.log(x);
+// })();
+// output 2 5 
 
-// output
-2
-5
 
 QUESTION:-2 // What will be the output of the code below and why?
 // setTimeout(() => {
 //     console.log("Hi");
 // }, 0)
 // console.log("Hello");
-// // output
-// Hello 
-// Hi
+// output Hello Hi
+
 // var x = 5;
 // x = 0;
 // setTimeout(() => {
@@ -29,9 +26,7 @@ QUESTION:-2 // What will be the output of the code below and why?
 // })
 // console.log("Hello");
 // x = x+1;
-// // output
-// Hello
-// 1
+// output Hello 1
 
 QUESTION:-3 //What will be the output of the code below and why?
 // fun2();
@@ -46,22 +41,21 @@ QUESTION:-3 //What will be the output of the code below and why?
 // }
 // var x = 5;
 // let y = 7;
-// // output 
-// fun2
-// undefined
+ // output => fun2 undefined 
 //ReferenceError: //Cannot access 'y' before initialisation
 //ReferenceError: //Cannot access 'fun1' before initialisation
 
 QUESTION:-4 // What will be the output of the following code?
-// var Output = (function(x)
+// var Output = (function(X)
 // {
 // delete X;
 // return X;
 // }
 // )(0);
 // console.log(Output);
+// output => 0
 
-// QUESTION:-5 //What will be the output of the following code?
+ QUESTION:-5 //What will be the output of the following code?
 // var X = { Foo : 1}; 
 // var Output = (function() 
 // { 
@@ -69,24 +63,24 @@ QUESTION:-4 // What will be the output of the following code?
 // return X.foo; 
 // } 
 // )(); 
-// console.log(output);
+// console.log(Output);
+// output => undefined
 
 QUESTION:-6 //the output of the given JavaScript code?
 // let x = 10;
 // const y = x++ + ++x - ++x;
-
-// console.log(y); //9
+// console.log(x++, ++x, --x, y); // 9
+//x++ = 13 , ++x = 15 , ++x = 14 => 13+15-14 => 9
 
 QUESTION:-6 // the output of the given JavaScript code?
 // function* greetGenerator() {
 //     yield 'Hi';
 //     yield 'Hello';
 //   }
-  
 //   const greet = greetGenerator();
-  
-//   console.log(greet.next().value);
-//   console.log(greet.next().value); //Hi Hello
+//   console.log(greet.next().value); // Hi 
+//   console.log(greet.next().value); // Hello
+//   console.log(greet.next().value); // undefine
 
 QUESTION:-7 //the output of the given JavaScript code?
 // function greet(message) {
@@ -95,23 +89,24 @@ QUESTION:-7 //the output of the given JavaScript code?
 //         else reject('Hmm');
 //     })
 //   }
-  
-//   const result = greet('Hello').then((data) => {
+//    const result = greet('Hello').then((data) => {
 //     console.log(data)
 //   }).catch((data) => {
 //     console.log(data);
 //   }) //Hmm
 
   QUESTION:-8 //the output of the given JavaScript code?
-  // const arr = [...'codedamn'];
+//   const arr = [...'codedamn'];
 
 // console.log(arr); //[‘ c’, ‘o’, ‘d’, ‘e’, ‘d’, ‘a’, ‘m’, ‘n’]
 
 QUESTION:-9 //Write a function that removes duplicates from an array without using Set.
-// function removeDuplicates(arr) {
-//     return arr.filter((x, i) => arr.indexOf(x) === i);
-//   }
+function removeDuplicates(arr) {
+    return arr.filter((x, i) => arr.indexOf(x) === i);
+  }
+console.log(removeDuplicates([1,2,3,1,4])) // [ 1, 2, 3, 4 ]
 
-//   QUESTION:-10 //
+//   QUESTION:-10 // output
+
 
 
