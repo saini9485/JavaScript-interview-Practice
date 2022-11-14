@@ -302,6 +302,7 @@ const sym4 = Symbol.for("two");
 console.log(sym1 === sym2, sym3 === sym4);
 //false true
 
+Question:31 //
 
 
 
