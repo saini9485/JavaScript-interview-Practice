@@ -293,16 +293,16 @@ All NaN values are equal
 Both +0 and -0 considered as different values */
 
 Question:-30 //
-const sym1 = Symbol("one");
-const sym2 = Symbol("one");
+// const sym1 = Symbol("one");
+// const sym2 = Symbol("one");
 
-const sym3 = Symbol.for("two");
-const sym4 = Symbol.for("two");
-
-console.log(sym1 === sym2, sym3 === sym4);
+// const sym3 = Symbol.for("two");
+// const sym4 = Symbol.for("two");
+// console.log(sym1 === sym2, sym3 === sym4);
 //false true
 
 Question:31 //
+console.log(Promise.resolve(5)) //Promise { 5 }
 
 
 
