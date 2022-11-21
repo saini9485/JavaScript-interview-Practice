@@ -92,16 +92,49 @@ Question: -9//
 // getDate().then((res)=>console.log(res))
 // output => i am ready 
 
-Question: -10 //
-const firstPromise = new Promise((res, rej) => {
-        setTimeout(res, 5000, "one")
-})
+Question: -10 // Promise.race
+// const firstPromise = new Promise((res, rej) => {
+//         setTimeout(res, 5000, "one")
+// })
 
-const secondPromise = new Promise((res, rej) => {
-        setTimeout(res, 1000, "two")
-})
- Promise.race([firstPromise, secondPromise]).then((res) => console.log(res))
- //output =>two 
- /*Promise.race print only first function whatever resolve first ,  here 
- second fuction will resolve first that's why here coming two */
- 
+// const secondPromise = new Promise((res, rej) => {
+//         setTimeout(res, 1000, "two")
+// })
+//  Promise.race([firstPromise, secondPromise]).then((res) => console.log(res))
+//output =>two 
+/*Promise.race print only first function whatever resolve first ,  here 
+second fuction will resolve first that's why here coming two */
+
+
+Question: -11 // Promise.all
+//  const firstPromise = new Promise((res, rej) => {
+//         setTimeout(res, 5000, "one")
+// })
+
+// const secondPromise = new Promise((res, rej) => {
+//         setTimeout(res, 1000, "two")
+// })
+//  Promise.all([firstPromise, secondPromise]).then((res) => console.log(res))
+//output => [ 'one', 'two' ]
+/*Promise.all print all function but it will print line by line it will wait untill function 
+does't resolve  here first will be resolve then secod will be resolve*/
+
+Question: -12 //
+// function getSomeData() {
+//         return new Promise((res, rej) => {
+//                 try {
+//                         const fetchData = ("receiveData")
+//                         res(fetchData)
+//                 }
+//                 catch (error) {
+//                         rej(error)
+//                 }
+//                 finally {
+//                       console.log("hello")  
+//                 }
+//         })
+// }
+// getSomeData().then((res) => console.log(res))
+//hello,receiveData
+
+Question:-13 //
