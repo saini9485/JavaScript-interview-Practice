@@ -302,7 +302,134 @@ Question:-30 //
 //false true
 
 Question:31 //
-console.log(Promise.resolve(5)) //Promise { 5 }
+// console.log(Promise.resolve(5)) //Promise { 5 }
+
+Question:-31 // What is the output of below code
+// const sym1 = new Symbol("one");
+// console.log(sym1);
+//output=>reference Error 
+/*becouse here symbol is a standard function and not an object constructor */
+
+Question:-32 //
+// let myNumber = 100;
+// let myString = "100";
+
+// if (!typeof myNumber === "string") {
+//   console.log("It is not a string!");
+// } else {
+//   console.log("It is a string!");
+// }
+
+// if (!typeof myString === "number") {
+//   console.log("It is not a number!");
+// } else {
+//   console.log("It is a number!");
+//}
+//output=> It is a string! It is a number!
+/*beacose typeof always return truely value true or false that's condition will be failse and 
+it will go in else block */
+
+Question:-33//
+// console.log(
+//   JSON.stringify({ myArray: ["one", undefined, function () {}, Symbol("")] })
+// );
+// console.log(
+//   JSON.stringify({ [Symbol.for("one")]: "one" }, [Symbol.for("one")])
+// );
+//output => {"myArray":["one",null,null,null]} {}
+/*symbol and undefine not valid in JSON that's it will consider null 
+All Symbol-keyed properties will be completely ignored. Hence it returns an empty object({}). */
+
+Question:34//
+// class A {
+//   constructor() {
+//     console.log(new.target.name);
+//   }
+// }
+
+// class B extends A {
+//   constructor() {
+//     super();
+//   }
+// }
+
+// new A();
+// new B();
+//A B
+
+Question:-35 //
+// const [x, ...y, z] = [1, 2, 3, 4];
+// console.log(x, y, z);
+//Syntax Error 
+/*becouse after rest operator comma is not valid rest operator will be in last  */
+
+Question:-35.1 //
+// const [x, z, ...y ] = [1, 2, 3, 4];
+// console.log(x, y, z);
+// output 1 [ 3, 4 ] 2
+
+Question:-36
+// const { a: x = 10, b: y = 20 } = { a: 30 };
+
+// console.log(x);
+// console.log(y);
+//output=> 30 20
+
+Question:-37 //
+// function area({ length = 10, width = 20 }) {
+//   console.log(length * width);
+// }
+
+// area();
+//Error 
+/*if you are doing object destructing you should define at least one argument other wise it will give error */
+
+Question:37.1 //
+// function area({ length = 10, width = 20 }) {
+//   console.log(length * width);
+// }
+
+// area({});
+//200 
+
+Question:-38 //
+// const props = [
+//   { id: 1, name: "John" },
+//   { id: 2, name: "Jack" },
+//   { id: 3, name: "Tom" },
+// ];
+
+// const [, , { name }] = props;
+// console.log(name);
+//output => Tom
+/*becouse here we have two empty place it will consider it also */
+
+Question:-39//
+// function checkType(num = 1) {
+//   console.log(typeof num);
+// }
+
+// checkType();
+// checkType(undefined);
+// checkType("");
+// checkType(null);
+//output => number number string object
+
+Question:-40//
+// function add(item, items = []) {
+//   items.push(item);
+//   return items;
+// }
+
+// console.log(add("Orange"));
+// console.log(add("Apple"));
+//output => [ 'Orange' ] [ 'Apple' ]
+/*every call create new object here  */
+
+
+
+
+
 
 
 
