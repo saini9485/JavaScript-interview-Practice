@@ -537,7 +537,191 @@ First You need to declare your class and then access it, otherwise it will
 throw a ReferenceError  */
 
 Question:-50 //
+// function Person() {}
 
+// Person.prototype.walk = function () {
+//   return this;
+// };
+
+// Person.run = function () {
+//   return this;
+// };
+
+// let user = new Person();
+// let walk = user.walk;
+// console.log(walk());
+
+// let run = Person.run;
+// console.log(run()); // Window, Window
+//did't get
+
+Question:-51 //
+// class Vehicle {
+//     constructor(name) {
+//       this.name = name;
+//     }
+  
+//     start() {
+//       console.log(`${this.name} vehicle started`); //BMW car started
+//     }
+//   }
+  
+//   class Car extends Vehicle {
+//     start() {
+//       console.log(`${this.name} car started`); //BMW vehicle started
+//       super.start();
+//     }
+//   }
+  
+//   const car = new Car("BMW");
+//   console.log(car.start()); //undefined
+
+Question:-52//
+// const USER = { age: 30 };
+// USER.age = 25;
+// console.log(USER.age); //25
+
+Question:-53//
+// console.log("🙂" === "🙂"); //true
+
+Question:-54//
+// console.log(typeof typeof typeof true); //string
+
+Question:-55//
+// let zero = new Number(0);
+
+// if (zero) {
+//   console.log("If");
+// } else {
+//   console.log("Else");
+// }
+//output=> If
+/*The type of operator on new Number always returns object. i.e, 
+typeof new Number(0) --> object.
+Objects are always truthy in if block */
+
+Question:-55.1//
+// let msg = "Good morning!!";
+
+// msg.name = "John";
+
+// console.log(msg.name); //undefined
+/*It returns undefined for non-strict mode and returns Error for strict mode. */
+
+Question:-56//
+// let count = 10;
+
+// (function innerFunc() {
+//   if (count === 10) {
+//     let count = 11;
+//     console.log(count); //11
+//   }
+//   console.log(count); //10
+// })();
+/*The innerFunc is a closure which captures the count variable from the 
+outerscope. i.e, 10. But the conditional has another local variable count 
+which overwrites the ourter count variable. So the first console.log displays 
+value 11. Whereas the second console.log logs 10 by capturing the count 
+variable from outerscope. */
+
+Question:-57//What is the output of below code ?
+//  console.log(true && 'hi'); //hi
+//  console.log(true && 'hi' && 1);//1 
+// console.log(true && '' && 0);//
+
+Question:-58//
+// let arr = [1, 2, 3];
+// let str = "1,2,3";
+
+// console.log(arr == str);//true
+
+/*when you will compare here it will check only value when you use ===then it will check
+also data type and it will return false  */
+
+Question:-59//
+// getMessage();
+
+// var getMessage = () => {
+//   console.log("Good morning");
+//}; //getMessage is not a function
+/*when you will use normal function then it will print Good morning  */
+
+Question:-60//
+// let quickPromise = Promise.resolve();
+
+// quickPromise.then(() => console.log("promise finished"));
+
+// console.log("program finished"); 
+//output => program finished, promise finished
+/*Even though a promise is resolved immediately, it won't be executed 
+immediately because its .then/catch/finally handlers or callbacks(aka task)
+ are pushed into the queue. Whenever the JavaScript engine becomes free from 
+ the current program, it pulls a task from the queue and executes it. This is 
+ the reason why last statement is printed first before the log of promise 
+ handler.
+
+Note: We call the above queue as "MicroTask Queue" */
+
+Question:-61//
+// console.log('First line')
+// ['a', 'b', 'c'].forEach((element) => console.log(element))
+// console.log('Third line')
+//Cannot read properties of undefined
+
+Question:-62//Write a function that returns a random HEX color
+// const HEX_ALPHABET = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+// const HEX_PREFIX = "#";
+// const HEX_LENGTH = 6;
+
+// function generateRandomHex() {
+// 	let randomHex = "";
+
+// 	for(let i = 0; i < HEX_LENGTH; i++) {
+// 		const randomIndex = Math.floor(Math.random() * HEX_ALPHABET.length);
+// 		randomHex += HEX_ALPHABET[randomIndex];
+// 	}
+
+// 	return HEX_PREFIX + randomHex;
+// }
+
+Solution:-2//
+// const HEX_PREFIX = "#";
+// const HEX_RADIX = 16;
+// const HEX_LENGTH = 6;
+
+// function generateRandomHex() {
+// 	return HEX_PREFIX + Math.floor(Math.random() * 0xffffff).toString(HEX_RADIX).padStart(HEX_LENGTH, "0");
+// } 
+
+Question:-63//
+// var of = ['of'];
+// for(var of of of) {
+//   console.log(of); //of
+// }
+/*In JavaScript, of is not considered as a reserved keyword. So the variable declaration with of is accepted and prints the array value of using for..of loop.
+
+But if you use reserved keyword such as in then there will be a syntax error saying SyntaxError: Unexpected token in,
+
+var in = ['in'];
+for(var in in in) {
+  console.log(in[in]);
+} */
+
+Question:-64//
+// const numbers = [11, 25, 31, 23, 33, 18, 200];
+// numbers.sort();
+// console.log(numbers);//11, 18, 200, 23,25, 31,  33
+/*y default, the sort method sorts elements alphabetically. This is because 
+elemented converted to strings and strings compared in UTF-16 code units order.
+ Hence, you will see the above numbers not sorted as expected. In order to 
+ sort numerically just supply a comparator function which handles numeric sorts.
+
+const numbers = [11, 25, 31, 23, 33, 18, 200];
+numbers.sort((a, b) => a - b);
+console.log(numbers);
+Note: Sort() method changes the original array. */
+
+//Happy ending output base questions
 
 
 
