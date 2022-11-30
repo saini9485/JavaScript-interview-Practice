@@ -694,10 +694,10 @@ Solution:-2//
 // } 
 
 Question:-63//
-// var of = ['of'];
-// for(var of of of) {
-//   console.log(of); //of
-// }
+var of = ['of'];
+for(var of of of) {
+  console.log(of); //of
+}
 /*In JavaScript, of is not considered as a reserved keyword. So the variable declaration with of is accepted and prints the array value of using for..of loop.
 
 But if you use reserved keyword such as in then there will be a syntax error saying SyntaxError: Unexpected token in,
