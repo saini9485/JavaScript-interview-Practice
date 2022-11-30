@@ -685,13 +685,13 @@ Question:-62//Write a function that returns a random HEX color
 // }
 
 Solution:-2//
-// const HEX_PREFIX = "#";
-// const HEX_RADIX = 16;
-// const HEX_LENGTH = 6;
+const HEX_PREFIX = "#";
+const HEX_RADIX = 16;
+const HEX_LENGTH = 6;
 
-// function generateRandomHex() {
-// 	return HEX_PREFIX + Math.floor(Math.random() * 0xffffff).toString(HEX_RADIX).padStart(HEX_LENGTH, "0");
-// } 
+function generateRandomHex() {
+	return HEX_PREFIX + Math.floor(Math.random() * 0xffffff).toString(HEX_RADIX).padStart(HEX_LENGTH, "0");
+} 
 
 Question:-63//
 var of = ['of'];
