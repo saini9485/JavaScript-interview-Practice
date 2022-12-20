@@ -32,3 +32,6 @@ for (var i = 1; i <= 5; i++) {
   Questions:- 4 // how many way we can select this 
 
 //   <ul class = "nav-bar" role ="list" id = "navbar"></ul>
+/*
+1. .nav-bar 2. #navbar 3. ul 4. body>ul, 5. ul[role]
+ */
