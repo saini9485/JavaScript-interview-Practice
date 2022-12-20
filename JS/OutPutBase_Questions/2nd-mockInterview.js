@@ -28,3 +28,7 @@ for (var i = 1; i <= 5; i++) {
     }, i * 1000)
   }
   //6 6 6 6 6 => after one second interval 
+
+  Questions:- 4 // how many way we can select this 
+
+//   <ul class = "nav-bar" role ="list" id = "navbar"></ul>
