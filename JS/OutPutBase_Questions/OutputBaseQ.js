@@ -101,12 +101,19 @@ QUESTION:-7 //the output of the given JavaScript code?
 // console.log(arr); //[‘ c’, ‘o’, ‘d’, ‘e’, ‘d’, ‘a’, ‘m’, ‘n’]
 
 QUESTION:-9 //Write a function that removes duplicates from an array without using Set.
-function removeDuplicates(arr) {
-    return arr.filter((x, i) => arr.indexOf(x) === i);
-  }
-console.log(removeDuplicates([1,2,3,1,4])) // [ 1, 2, 3, 4 ]
+// function removeDuplicates(arr) {
+//     return arr.filter((x, i) => arr.indexOf(x) === i);
+//   }
+// console.log(removeDuplicates([1,2,3,1,4])) // [ 1, 2, 3, 4 ]
 
-//   QUESTION:-10 // output
+   QUESTION:-10 // output 
 
+var a = 1;
 
+var func = function(){
+    console.log(a)
+    var a = 2 
+};
+
+func() 
 
