@@ -108,12 +108,70 @@ QUESTION:-9 //Write a function that removes duplicates from an array without usi
 
    QUESTION:-10 // output 
 
-var a = 1;
+// var a = 1;
 
-var func = function(){
-    console.log(a)
-    var a = 2 
+// var func = function(){
+//     console.log(a)
+//     var a = 2 
+// };
+
+// func() 
+
+QUESTION:-11
+let arr = [1,2,3]
+arr[100] = 4
+console.log(arr.length) //101
+
+QUESTION:-12
+var car = new Vehicle("Honda", "white", "2010", "UK");
+console.log(car);
+
+function Vehicle(model, color, year, country) {
+  this.model = model;
+  this.color = color;
+  this.year = year;
+  this.country = country;
+}
+
+//model, color, year, country
+
+QUESTION:-13//
+const arrowFunc = () => arguments.length;
+console.log(arrowFunc(1, 2, 3)); //Error
+
+QUESTION:-14//
+console.log(10 + "10"); //1010
+console.log(10 - "10"); //0
+
+QUESTION:-15//
+let user1 = {
+  name: 'John',
+  age: 27
 };
 
-func() 
+let user2 = user1;
+user2.age = 30;
+
+console.log(user1.age, user2.age); //30 30 
+
+QUESTION:-16//
+function main() {
+  console.log("A");
+  setTimeout(function print() {
+    console.log("B");
+  }, 0);
+  console.log("C");
+}
+main(); //A,C,B
+
+QUESTION:-17//
+var myChars = ["a", "b", "c", "d"];
+delete myChars[0];
+console.log(myChars);//[empty, "b", "c", "d"]
+console.log(myChars[0]);//undefined
+console.log(myChars.length);//4
+
+
+
+
 
