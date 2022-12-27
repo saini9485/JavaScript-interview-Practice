@@ -171,6 +171,17 @@ console.log(myChars);//[empty, "b", "c", "d"]
 console.log(myChars[0]);//undefined
 console.log(myChars.length);//4
 
+QUESTION:-18
+var x = 23;
+
+(function(){
+  var x = 43;
+  (function random(){
+    x++;
+    console.log(x);
+    var x = 21;
+  })();
+})();
 
 
 
