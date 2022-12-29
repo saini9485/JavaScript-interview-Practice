@@ -8,7 +8,7 @@ const handleStart = () =>{
 interval = setInterval(() => {
   time+= 1;
 timer.innerHTML = time;
-},1000);
+},100);
 
 }
 const handleStop = () =>{
