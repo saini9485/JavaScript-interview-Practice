@@ -193,6 +193,5 @@ for(let i=0;i<a.length;i++){
     newArr.push(b[i])
 }
 console.log(newArr) //[1,5,2,6,3,7,4,8];
-Que
 
 
