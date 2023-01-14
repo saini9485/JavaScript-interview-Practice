@@ -6,7 +6,7 @@
 // getData()
 
 
-//With Throatling....
+//With Throatling...
 
 const Throatling =(fn , wait)=>{
     return function (...args){
