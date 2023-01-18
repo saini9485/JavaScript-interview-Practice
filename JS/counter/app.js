@@ -5,7 +5,7 @@ const decrement = document.querySelector(".Decrement")
 let count = 0;
 
 const handleIncrement = () =>{
-    count+= 1;
+    count+= 2;
     counter.innerHTML = count
 }
 
