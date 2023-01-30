@@ -1,7 +1,7 @@
 // "use strict"
 
 let obj = {
-    name :"Hema",
+    name :"Rajesh",
       yearofbirth : 2000,
       
     calculateAge :()=>{
@@ -32,9 +32,9 @@ let obj = {
     
     console.log(name2,"not hoisted")
     console.log(name,"hoisted")
-    var name = "hema"
+    var name = "Rajesh"
     
-    let name2 = "mane"
+    let name2 = "saini"
     
     getName()
      getAge()
