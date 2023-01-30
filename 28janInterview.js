@@ -27,14 +27,16 @@
 
 //how we can change in 1 to 5 without using let 
 
-for (var i = 0; i < 5; i++) {
-    function a (i){
-       setTimeout(() => {
-        console.log(i)
-    }, 1000)  
-    i++
-    }
-  a(i)
-} 
+// for (var i = 0; i < 5; i++) {
+//     function a (i){
+//        setTimeout(() => {
+//         console.log(i)
+//     }, 1000)  
+//     i++
+//     }
+//   a(i)
+// } 
 
-//
+//1. convert "aircampus" into capital later using array method 
+// 2. polyfills 
+
