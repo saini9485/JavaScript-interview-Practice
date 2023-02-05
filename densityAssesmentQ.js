@@ -17,7 +17,7 @@ function fibonacciSeriesPrinter( number ) {
  };
  return fibonacciSeries(number).next().value;
  }
- console.log(fibonacciSeriesPrinter(4))
+ console.log(fibonacciSeriesPrinter(5))
  
  
  
