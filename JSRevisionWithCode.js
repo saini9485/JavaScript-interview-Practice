@@ -11,4 +11,3 @@ function outerFun (a){
 }
 outerFun(15) // sum 25
 
-Topic:-2 //
