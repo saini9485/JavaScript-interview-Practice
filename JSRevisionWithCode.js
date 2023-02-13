@@ -9,5 +9,5 @@ function outerFun (a){
     }
     innerFun()
 }
-outerFun(15) // sum 25
+outerFun(5) // sum 15
 
