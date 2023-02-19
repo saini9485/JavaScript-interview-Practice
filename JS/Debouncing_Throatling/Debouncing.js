@@ -14,7 +14,7 @@ function getData (){
 //     },wait)
 // }
 // }
-// const BetterFunction = Debouncing(getData,2000)
+// const BetterFunction = Debouncing(getData,3000)
 
 
 
