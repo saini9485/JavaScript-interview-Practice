@@ -65,5 +65,5 @@ function sum (a){
         }
     }
 }
-console.log(sum(4)(5)(9)) //16
+console.log(sum(4)(5)(10)) //16
 
