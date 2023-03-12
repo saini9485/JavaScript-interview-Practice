@@ -58,13 +58,16 @@ Topic:-3 // way to  copy the object
 // console.log(p3)
 
 Topic:-4 // Currying  Function 
-function sum (a){
-    return function (b){
-        return function (c){
-            return a+b+c;
-        }
-    }
-}
-console.log(sum(4)(55)(10)) //16
+// function sum (a){
+//     return function (b){
+//         return function (c){
+//             return a+b+c;
+//         }
+//     }
+// }
+// console.log(sum(4)(55)(10)) //16
+
+Topic:-5 //Promises 
+
 
 
