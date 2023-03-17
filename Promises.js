@@ -1,6 +1,6 @@
 Example:-1 
 let Promises = new Promise ((resolve , reject)=>{
-    if(100>15){
+    if(100>150){
         resolve("successfully")
     }else{
        reject ("unsuccessful")
