@@ -18,7 +18,7 @@
 // b()
 
 
-what will be output 
+//what will be output 
 for (var i = 0; i < 5; i++) {
     setTimeout(() => {
         console.log(i)
@@ -61,6 +61,8 @@ while (1) {
 // count 1
 // x true
 // count 2...
+
+question:- 2
 
 
 
