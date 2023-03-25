@@ -18,12 +18,12 @@
 // b()
 
 
-//what will be output 
-// for (var i = 0; i < 5; i++) {
-//     setTimeout(() => {
-//         console.log(i)
-//     }, 1000)
-// }
+what will be output 
+for (var i = 0; i < 5; i++) {
+    setTimeout(() => {
+        console.log(i)
+    }, 1000)
+}
 
 //how we can change in 1 to 5 without using let 
 
