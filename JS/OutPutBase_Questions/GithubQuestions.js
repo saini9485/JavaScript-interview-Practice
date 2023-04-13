@@ -723,7 +723,7 @@ Note: Sort() method changes the original array. */
 
 //Happy ending output base questions
 //i solved two times all questions
-Question:-65//
+
 
 
 
