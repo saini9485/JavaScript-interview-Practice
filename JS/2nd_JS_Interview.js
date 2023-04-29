@@ -8,4 +8,4 @@
 console.log(1<2<4<1)//1<2=> true , 1<4 => true , 1<1 => false
 console.log(1>2>4>0)//1>2 => false , 0>4 => false , 0>0=> false
 console.log(3>2>0>1)// false 
-console.log(3>2>5)
+console.log(3>2>0)
