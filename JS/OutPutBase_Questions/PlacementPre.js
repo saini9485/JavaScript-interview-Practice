@@ -119,7 +119,7 @@ Question: -11 // Promise.all
 /*Promise.all print all function but it will print line by line it will wait untill function 
 does't resolve  here first will be resolve then second will be resolve*/
 
-Question: -12 //
+Question: -12 
 // function getSomeData() {
 //         return new Promise((res, rej) => {
 //                 try {
