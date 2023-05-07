@@ -117,7 +117,7 @@ Question: -11 // Promise.all
 //  Promise.all([firstPromise, secondPromise]).then((res) => console.log(res))
 //output => [ 'one', 'two' ]
 /*Promise.all print all function but it will print line by line it will wait untill function 
-does't resolve  here first will be resolve then secod will be resolve*/
+does't resolve  here first will be resolve then second will be resolve*/
 
 Question: -12 //
 // function getSomeData() {

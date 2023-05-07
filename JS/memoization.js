@@ -14,7 +14,7 @@ function sum (n){
     return function (...args){
       let n = args[0]
       if(n in cache){
-        console.log("cache")
+        console.log("cache")   
         return cache[n]
       }else{
         console.log("first")

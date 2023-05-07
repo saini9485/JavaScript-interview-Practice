@@ -1,9 +1,9 @@
 question: -1; /* */
-function add (a){
-    return function (b){
-        if(b)return add(a+b)
+function add(a) {
+    return function (b) {
+        if (b) return add(a + b)
         console.log(a)
-        return a 
+        return a
     }
 }
 console.log(add(5)(2)(4)(5)()) //16
@@ -49,7 +49,7 @@ question: -4; /*Write a currying function that takes infinite arguments. */
 //   };
 // }
 
-question :-5 /* *///recursive solution
+question: -5 /* *///recursive solution
 // const sum = function(a) {
 //     return function(b) {
 //         if (b) {

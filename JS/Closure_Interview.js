@@ -84,7 +84,7 @@ example: - 5
 //   setTimeout(function log() {
 //     console.log(i); // What is logged?
 //   }, 1000);
-// } //3 3 3
+// } //0 1 2
 
 
 example:-6

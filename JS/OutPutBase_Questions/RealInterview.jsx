@@ -7,7 +7,7 @@ for (i = 0; i < arr.length; i++) {
   }, 3000);
 }
 
-//undefined 6 times
+//undefined 6 times 
 
 Questions:-2 //what is different in between 
 this.setState({name:"xyz"})
