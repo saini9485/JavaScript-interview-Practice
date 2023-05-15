@@ -11,9 +11,9 @@
 question:-1/* Find the pairs of array element for which sum is equal to given target
  value(Two Sum Problem)*/ 
  
-let arr1 = [1,2,3,4,5,6,7,8] 
+let arr1 = [1,2,3,4,5,6,7,8,9] 
 
-Qestion:-3 //How would you remove and return the last element from an array in JavaScript?
+Question:-3 //How would you remove and return the last element from an array in JavaScript?
 let myArray = [1, 2, 3, 4, 5];
 let lastElement = myArray.pop(); // removes and returns 5
 console.log(lastElement); // outputs 5
