@@ -3,16 +3,16 @@
 //closure is combination of  a function when other inner function access variable
 //of outer function this is called closure //and also we can say outer function variable with inner function
 
-//what is advantage of closure
+//0.What is advantage of closure
 //1. it don't loss previous data it remain
-//2.there data will not distroyed
+//2.there data will not destroyed 
 //in case of normal function it loss our memory
-//why we use closure 
+//why we use closure  
 // for save the time and made easy of code for replace the setTimeout 
 
 
 example:-1
-// d = 5
+// d = 5   
 // function outerFunction (a){
 // let b = 10;
 // {

@@ -17,8 +17,8 @@
 // 12.console.log(x || z )
 // 13.console.log(x && z )
 // 14.console.log(x && z )
-// 15.find rajesh is present or not in string
-// 16.let str = "my is Rajesh saini" 
+// 15.find  Rajesh is present or not in string
+// 16.let str = "my is Rajesh Saini" 
 // 17.make a 1D array and convert into 2D array
 // 18.what is function declaration and definition with example
 // 19.define arrow function , Anonymous, HOF function

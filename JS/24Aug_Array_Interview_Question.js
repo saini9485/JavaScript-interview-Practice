@@ -9,8 +9,9 @@
 8. How would you remove duplicates in an array without using any inbuilt function?
  */
 question:-1/* Find the pairs of array element for which sum is equal to given target
- value(Two Sum Problem)*/
-let arr1 = [1,2,3,4,5,6,7,8,9]
+ value(Two Sum Problem)*/ 
+ 
+let arr1 = [1,2,3,4,5,6,7,8] 
 
 Qestion:-3 //How would you remove and return the last element from an array in JavaScript?
 let myArray = [1, 2, 3, 4, 5];
@@ -21,7 +22,7 @@ console.log(myArray); // outputs [1, 2, 3, 4]
 Questions:-7 // How would you use arrays to swap variables in JS?
 let a = 5;
 let b = 10;
-let temp = [a, b]; // Store the values of a and b in an array
+let temp = [a, b]; // Store the values of a and b in an array 
 
 a = temp[1]; // Assign the value of b to a
 b = temp[0]; // Assign the value of a to b
