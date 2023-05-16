@@ -11,7 +11,7 @@
 question:-1/* Find the pairs of array element for which sum is equal to given target
  value(Two Sum Problem)*/ 
  
-let arr1 = [1,2,3,4,5,6,7,8,9] 
+let arr1 = [1,2,3,4,5,6,7,8] 
 
 Question:-3 //How would you remove and return the last element from an array in JavaScript?
 let myArray = [1, 2, 3, 4, 5];
