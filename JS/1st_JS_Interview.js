@@ -43,4 +43,4 @@ function Interval (){
     console.log((3),20000)
     console.log(4) //1,4,2,3
 }
-console.log("hi")
+console.log("hi ")
