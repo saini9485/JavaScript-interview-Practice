@@ -1,14 +1,14 @@
 QUESTION:-1   //What will be the output of the code below?
-// x = 5;
-// var x;
-// (function fun() { 
-//     {
-//         let x = 1;
-//         x++;
-//         console.log(x);
-//     }
-//     console.log(x);
-// })();
+x = 5;
+var x;
+(function fun() { 
+    {
+        let x = 1;
+        x++;
+        console.log(x);
+    }
+    console.log(x);
+})();
 // output 2 5 
 
 
