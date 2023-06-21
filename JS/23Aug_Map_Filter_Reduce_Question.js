@@ -23,10 +23,11 @@ solution:-2  //with loop
 
 
 question:-2  /*Return only details of those student who scored more than 60 marks */
-// let StudentDetails = Students.filter((stu)=> {
-//    return stu.Marks>60
-// })
-// console.log(StudentDetails) 
+
+let StudentDetails = Students.filter((stu)=> {
+   return stu.Marks>60
+})
+console.log(StudentDetails) 
 
 
 question:-3 /*marks more than 60 and RollNumber should be greater than 15 */
@@ -57,6 +58,7 @@ if i will not give any deafault value it store arr[0] so far i provided default 
 question:-5 /*Return total marks of student with marks greater than 60 after 
              20 marks have been added to those who scored less than 60 */ 
 
+            
 const totalMarks = Students.map((stu)=>{
     if(stu.Marks<60){
         stu.Marks +=20  
@@ -64,10 +66,12 @@ const totalMarks = Students.map((stu)=>{
     return stu;
 })
 .filter((stu)=>{
-    return (stu.Marks>60) //
+    return (stu.Marks>60) // 
 })
 .reduce((acc,curr)=>{
     return acc+curr.Marks
 },0)
-console.log(totalMarks) //224 
+
+console.log(totalMarks) //224
+
   
