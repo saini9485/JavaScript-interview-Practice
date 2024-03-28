@@ -1,3 +1,4 @@
+
 QUESTION:-1   //What will be the output of the code below?
 x = 5;
 var x;
@@ -7,10 +8,10 @@ var x;
         x++;
         console.log(x);
     }
-    console.log(x);
+    console.log(x); 
 })();
-// output 2 5 
 
+// output 2 5 
 
 QUESTION:-2 // What will be the output of the code below and why?
 // setTimeout(() => {
@@ -192,7 +193,7 @@ for(let i=0;i<a.length;i++){
     newArr.push(a[i])
     newArr.push(b[i])
 }
-console.log(newArr) //[1,5,2,6,3,7,4,8];
+console.log(newArr) //[1,5,2,6,3,7,4,8]; 
 
 
 console.log(null); //null;
@@ -210,8 +211,12 @@ console.log(+null === 0); //true
 console.log(!!1 === true); //true
 console.log(Math.max()); //-Infinity
 console.log(Math.min()); //Infinity
-console.log(NaN == NaN); //false
+console.log(NaN == NaN); //false 
 console.log(typeof NaN.toString() === "string"); //true;
+
+
+
+
 
 
 
